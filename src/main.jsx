@@ -6,6 +6,7 @@ import Bio from './Bio'
 import Motto from './Motto'
 import Spesifikasi from './Spesifikasi'
 import Review from './Review'
+import Footer from './Footer'
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,5 +16,6 @@ createRoot(document.getElementById('root')).render(
     <Motto />
     <Spesifikasi />
     <Review />
+    <Footer />
   </StrictMode>,
 )

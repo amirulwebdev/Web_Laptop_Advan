@@ -3,18 +3,18 @@ import { motion, useInView } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
-import ryzen from '../src/assets/ryzen-5-6600h.png'
-import workplus from '../src/assets/workplus-2.png'
-import Advan from './assets/advan.png'
-import workplus1 from '../src/assets/workplus-1.png'
-import workplus3 from '../src/assets/workplus-3.png'
+// import ryzen from '../src/assets/ryzen-5-6600h.png'
+import workplus from '../public/workplus-2.png'
+import Advan from '../public/advan.png'
+import workplus1 from '../public/workplus-1.png'
+import workplus3 from '../public/workplus-3.png'
 
 const Motto = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <div id='motto' className="bg-white py-12 px-4 sm:px-6 lg:px-8" ref={ref}>
+    <div id='motto' className="bg-gray-100 py-6 px-4 sm:px-6 lg:px-8" ref={ref}>
       <div>
         <motion.img
           src={Advan}

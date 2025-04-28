@@ -9,3 +9,7 @@
 @theme {
     --font-pt-reguler: PT Serif, "serif"
 }
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import workplus from '../src/assets/workplus-2.png'
+import workplus from '../public/workplus-2.png'
 
 const Bio = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -28,10 +28,10 @@ const Bio = () => {
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold leading-tight text-gray-900 mb-6">
             ADVAN Workplus<br />
-            <span className="text-red-700">AMD RYZEN 5</span><br />
+            <span className="text-pink-600">AMD RYZEN 5</span><br />
             6600H 14” FHD<br />IPS 16GB 1TB Win 11
           </h1>
-          <p className="text-gray-500 mb-8">
+          <p className="text-gray-500 mb-6">
             Ditujukan untuk professional, sangat nyaman digunakan untuk bekerja, programing, content creator, IT, main game, serta mendukung semua kegiatan Anda.
           </p>
         </motion.div>
@@ -56,7 +56,7 @@ const Bio = () => {
         {!isMobile && (
           <div className="flex-1 relative h-[700px] overflow-visible">
             {/* SHAPE */}
-            <div className="absolute top-10 right-[-48px] w-[500px] h-[500px] bg-red-700 rounded-full z-0 bg-gradient-to-r from-red-700 to-red-500"></div>
+            <div className="absolute top-10 right-[-48px] w-[500px] h-[500px] bg-pink-600 rounded-full z-0 bg-gradient-to-r from-pink-600 to-pink-900"></div>
 
             <motion.img
               initial={{ opacity: 0, x: 100 }}

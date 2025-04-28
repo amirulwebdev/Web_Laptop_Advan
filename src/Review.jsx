@@ -26,12 +26,12 @@ const reviews = [
 
 const Review = () => {
     return (
-        <section id='review' className="py-12 px-4 md:px-12 font-montserrat bg-slate-900 rounded-t-2xl">
+        <section id='review' className="py-24 px-4 md:px-12 font-montserrat bg-gray-100">
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-2xl md:text-4xl font-bold mb-8 text-white"
+                className="text-2xl md:text-4xl font-bold mb-8 text-black"
             >
                 Apa kata mereka?
             </motion.h2>
