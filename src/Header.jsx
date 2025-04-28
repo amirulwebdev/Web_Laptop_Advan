@@ -34,7 +34,7 @@ const Header = () => {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ADVAN</span>
-              <img className="h-8 w-auto" src={Advan} alt="Logo Advan" />
+              <img className="h-10 w-auto" src={Advan} alt="Logo Advan" />
             </a>
           </div>
 
@@ -50,7 +50,7 @@ const Header = () => {
                 <a
                   key={item}
                   href={href}
-                  className="text-sm font-semibold font-montserrat-reguler text-gray-900 hover:bg-pink-600 hover:text-white hover:px-3 hover:rounded-3xl transition-all duration-300 ease-in-out"
+                  className="text-md font-semibold font-montserrat-reguler text-gray-900 hover:bg-pink-600 hover:text-white hover:px-3 hover:rounded-3xl transition-all duration-300 ease-in-out"
                 >
                   {item}
                 </a>
@@ -61,7 +61,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end relative group">
             <button
-              className="inline-flex items-center gap-2 rounded-full bg-pink-600 px-4 py-2 text-sm font-semibold text-white shadow-md hover:bg-pink-600 transition-all duration-300"
+              className="inline-flex items-center gap-2 rounded-full bg-pink-600 px-4 py-2 text-md font-semibold text-white shadow-md hover:bg-pink-600 transition-all duration-300"
             >
               Beli Sekarang
             </button>

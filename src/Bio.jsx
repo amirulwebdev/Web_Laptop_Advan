@@ -37,25 +37,23 @@ const Bio = () => {
         </motion.div>
 
         {/* GAMBAR + SHAPE */}
-        {/* GAMBAR + SHAPE */}
-        {/* MOBILE */}
-        {isMobile && (
+        {isMobile ? (
           <div className="flex-1 flex items-center justify-center h-[400px] relative z-10">
+            {/* SHAPE MOBILE */}
+            <div className="absolute right-2 w-60 h-60 bg-pink-600 rounded-full z-0 bg-gradient-to-r from-pink-600 to-pink-900"></div>
+
             <motion.img
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
               src={workplus}
               alt="Laptop"
-              className="h-[280px] object-contain drop-shadow-2xl"
+              className="h-[280px] object-contain relative z-10 drop-shadow-2xl"
             />
           </div>
-        )}
-
-        {/* DESKTOP */}
-        {!isMobile && (
+        ) : (
           <div className="flex-1 relative h-[700px] overflow-visible">
-            {/* SHAPE */}
+            {/* SHAPE DESKTOP */}
             <div className="absolute top-10 right-[-48px] w-[500px] h-[500px] bg-pink-600 rounded-full z-0 bg-gradient-to-r from-pink-600 to-pink-900"></div>
 
             <motion.img
