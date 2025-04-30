@@ -14,19 +14,19 @@ const reviews = [
     },
     {
         name: 'Siti Nurhaliza',
-        text: 'Pengalaman saya sangat positif, pasti akan kembali lagi!',
+        text: 'Keren advan !',
         image: 'https://randomuser.me/api/portraits/women/65.jpg'
     },
     {
         name: 'Budi Santoso',
-        text: 'Tim yang profesional dan ramah.',
+        text: 'Desainnya keren minimalis.',
         image: 'https://randomuser.me/api/portraits/men/45.jpg'
     },
 ]
 
 const Review = () => {
     return (
-        <section id='review' className="py-24 px-4 md:px-12 font-montserrat bg-gray-100">
+        <section id='review' className="py-24 px-4 md:px-12 font-montserrat bg-gray-100 text-center">
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
