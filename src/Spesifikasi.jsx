@@ -4,7 +4,7 @@ import { Cpu, Laptop, Microchip, HardDrive, TvMinimalPlay, Keyboard } from 'luci
 
 const Layanan = () => {
     return (
-        <section id="layanan" className="py-16 px-6 md:px-20 bg-white text-black">
+        <section id="spesifikasi" className="py-16 px-6 md:px-20 bg-white text-black">
             <div className="text-center font-montserrat font-bold text-4xl mb-6">
                 Spesifikasi
             </div>

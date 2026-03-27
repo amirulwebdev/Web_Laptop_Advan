@@ -34,7 +34,7 @@ const Header = () => {
     { name: 'Produk', href: '#motto' },
     { name: 'Spesifikasi', href: '#spesifikasi' },
     { name: 'Review', href: '#review' },
-    { name: 'Testimoni', href: '#' },
+    // { name: 'Testimoni', href: '#testimoni' },
   ];
 
   const marketplaceLinks = [

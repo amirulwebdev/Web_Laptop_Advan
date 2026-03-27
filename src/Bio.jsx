@@ -36,7 +36,7 @@ const Bio = () => {
         </motion.div>
 
         {/* IMAGE WITH BACKGROUND SHAPE */}
-        <div className={`flex-1 flex items-center justify-center ${isMobile ? 'h-[400px]' : 'h-[700px]'} relative z-10 w-full`}>
+        <div className={`flex-1 flex items-center justify-center ${isMobile ? 'h-[400px]' : 'h-[700px]'} relative`}>
           {/* BACKGROUND SHAPE */}
           <div className={`absolute ${isMobile ? 'right-2 w-60 h-60' : 'top-10 right-[-48px] w-[500px] h-[500px]'} bg-pink-600 rounded-full z-0 bg-gradient-to-r from-pink-600 to-pink-900`}></div>
 
