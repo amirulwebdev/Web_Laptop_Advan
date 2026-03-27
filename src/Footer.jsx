@@ -1,4 +1,5 @@
 import React from 'react';
+import Advan from '../public/Advan.png'
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
                     <div className="mb-8 md:mb-0 md:w-1/3 md:pr-8">
                         <div className="flex items-center">
                             <img
-                                src="./public/advan.png" // Pastikan file ada di public folder
+                                src={Advan} // Pastikan file ada di public folder
                                 alt="Advan Logo"
                                 width={120}
                                 height={48}
