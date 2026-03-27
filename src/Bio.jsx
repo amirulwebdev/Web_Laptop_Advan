@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import Workplus2 from '../assets/workplus-2.png'
+// import Workplus2 from '../public/workplus-2.png'
 
 const Bio = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -45,7 +45,7 @@ const Bio = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: isMobile ? 1 : 1.2, ease: 'easeOut' }}
-            src={Workplus2} // Make sure this path is correct in your public folder
+            src={`${import.meta.env.BASE_URL}workplus-2.png`} // Make sure this path is correct in your public folder
             alt="ADVAN Workplus Laptop"
             className={`relative z-10 drop-shadow-2xl ${isMobile ? 'h-[280px]' : 'h-[700px] right-[-32px]'} object-contain`}
           />

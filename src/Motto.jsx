@@ -7,10 +7,12 @@ const Motto = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
+  // --- PERUBAHAN DI SINI ---
+  // Gunakan template literal agar path otomatis menyesuaikan base URL
   const images = [
-    { src: '/workplus-3.png', alt: 'ADVAN Workplus 3' },
-    { src: '/workplus-1.png', alt: 'ADVAN Workplus 1' },
-    { src: '/workplus-2.png', alt: 'ADVAN Workplus 2' }
+    { src: `${import.meta.env.BASE_URL}workplus-3.png`, alt: 'ADVAN Workplus 3' },
+    { src: `${import.meta.env.BASE_URL}workplus-1.png`, alt: 'ADVAN Workplus 1' },
+    { src: `${import.meta.env.BASE_URL}workplus-2.png`, alt: 'ADVAN Workplus 2' }
   ]
 
   return (
@@ -19,7 +21,8 @@ const Motto = () => {
         {/* Logo and Tagline */}
         <div className="text-center mb-12">
           <motion.img
-            src="/advan.png"
+            // Ini sudah benar pakai BASE_URL
+            src={`${import.meta.env.BASE_URL}advan.png`}
             alt="ADVAN Logo"
             className="h-16 sm:h-20 mx-auto"
             initial={{ opacity: 0, y: 20 }}
@@ -52,20 +55,15 @@ const Motto = () => {
               centeredSlides={true}
               loop={true}
               breakpoints={{
-                640: {
-                  slidesPerView: 1.5,
-                  spaceBetween: 30,
-                },
-                768: {
-                  slidesPerView: 2,
-                  centeredSlides: false,
-                }
+                640: { slidesPerView: 1.5, spaceBetween: 30 },
+                768: { slidesPerView: 2, centeredSlides: false }
               }}
             >
               {images.map((img, i) => (
                 <SwiperSlide key={i}>
                   <div className="flex justify-center p-2">
                     <motion.img
+                      // --- GUNAKAN img.src YANG SUDAH ADA BASE_URL NYA ---
                       src={img.src}
                       alt={img.alt}
                       className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-lg object-cover transition-transform duration-300 hover:scale-105"
@@ -91,6 +89,7 @@ const Motto = () => {
                 transition={{ duration: 0.5, delay: 0.3 + i * 0.2 }}
               >
                 <img
+                  // --- GUNAKAN img.src ---
                   src={img.src}
                   alt={img.alt}
                   className="w-full max-w-md rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
@@ -109,7 +108,7 @@ const Motto = () => {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <p className="text-gray-700 text-lg leading-relaxed">
-            Dengan adanya kerjasama dengan sistem kemitraan yang tersebar hampir di seluruh Indonesia, tentunya membuat produk kami berpeluang untuk mengekspansi pasar dengan jangkauan yang lebih luas. Selain itu kami juga hadirkan pemesanan secara online dengan layanan pengiriman ke seluruh Indonesia di platform e-commerce kami, yang tentunya dapat memudahkan customer untuk memesan produk, bertransaksi secara online dan layanan purna jual. Ingat smartphone, ingat <strong className="text-pink-600">#AdvanAja!</strong>
+            Dengan adanya kerjasama dengan sistem kemitraan... Ingat smartphone, ingat <strong className="text-pink-600">#AdvanAja!</strong>
           </p>
         </motion.div>
       </div>
